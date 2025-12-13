@@ -1,0 +1,445 @@
+.fonts {
+  font-size: 40px;
+}
+.fonts1 {
+  background-color: yellow;
+}
+/* -------------------------------------------------------- */
+/* --- Styles for Horizontal Top Navbar (Large Screens) --- */
+/* -------------------------------------------------------- */
+
+/* Media query for screens wider than 768px (common breakpoint for desktop) */
+@media (min-width: 575.98px) {
+  /* Hide the menu toggle button on large screens */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Make the sidebar-wrapper behave as a fixed top navbar */
+  #sidebar-wrapper {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0; /* Ensures it starts from the right edge */
+    width: 100%; /* Spans the full width */
+    height: 60px; /* Fixed height for the top bar */
+    background-color: #192087; /* Background for your top bar */
+    transform: translateX(0); /* Always visible, overriding sidebar transform */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    overflow-y: visible; /* No vertical scroll for a horizontal bar */
+    display: flex; /* Use flexbox for the wrapper itself */
+    justify-content: space-between; /* Puts space between brand and nav items */
+    align-items: center; /* Vertically centers content */
+    padding: 0 20px; /* Padding on the sides */
+  }
+
+  /* Make the sidebar-nav (ul) horizontal using Flexbox */
+  .sidebar-nav {
+    text-align: center;
+    display: flex; /* Key to making list items horizontal */
+    flex-direction: row; /* Arranges items in a row */
+    justify-content: flex-end; /* Pushes items to the right within the nav */
+    align-items: center; /* Vertically centers the items */
+    height: 100%; /* Take full height of wrapper */
+    width: auto; /* Allow content to dictate width */
+    /* Ensure no margin/padding from original sidebar ul styles conflict */
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-brand {
+    /* Adjust brand styling for the top bar */
+    border-bottom: none; /* No border for horizontal nav */
+    margin-bottom: 0;
+    padding: 0; /* Remove extra padding if needed */
+    text-align: left; /* Align brand to left */
+    font-size: 1.6rem; /* Slightly smaller for top bar */
+    color: #fff; /* White color for brand */
+  }
+  .sidebar-brand a {
+    padding: 0; /* Remove padding from link if brand is part of flex */
+  }
+
+  .sidebar-nav-item {
+    display: flex; /* Ensure each item respects horizontal spacing */
+    padding: 0; /* Remove vertical padding */
+    border-bottom: none; /* Remove border for horizontal nav */
+    margin-left: 25px; /* Spacing between horizontal items */
+  }
+
+  .sidebar-nav-item a {
+    padding: 10px 0; /* Adjust padding for horizontal links */
+    color: #cccccc; /* Link color */
+    white-space: nowrap; /* Prevent links from wrapping */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s ease; /* Smooth color transition on hover */
+  }
+
+  .sidebar-nav-item a:hover {
+    color: #fff; /* Link color on hover */
+    background-color: transparent; /* No background change on hover for a cleaner look */
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  /* Push body content down when fixed navbar is present */
+  body {
+    padding-top: 60px; /* Add space for the fixed navbar height */
+  }
+}
+
+.wight {
+  font-weight: bolder;
+  background: linear-gradient(90deg, #ff15a1, #2a24ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.aded {
+  color: black;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px;
+}
+.black {
+  font-weight: bold;
+}
+/* Portfolio Project Styles */
+.project-tech {
+  margin-top: 10px;
+}
+
+.tech-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.tech-badge-fullstack {
+  display: inline-block;
+  background-color: #198754;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.project-features {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.project-features small {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links .btn {
+  min-width: 120px;
+}
+
+.fullstack-project {
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+  background-color: #f8f9fa;
+  height: 100%;
+}
+
+.functionality-item {
+  padding: 10px;
+  border-left: 3px solid #198754;
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.functionality-item h6 {
+  color: #198754;
+  font-weight: 600;
+}
+
+.project-scope {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.project-scope:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scope-details p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* Keep your original black class if exists */
+.black {
+  color: #000;
+}
+
+.aded {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-links .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .fullstack-project .row > div {
+    margin-bottom: 20px;
+  }
+
+  .project-scope {
+    margin-bottom: 20px;
+  }
+}
+/* Bold Titles and Video Card Styles */
+strong {
+  font-weight: 700 !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.portfolio-item h2 {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.video-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-card .card-header {
+  border-bottom: none;
+}
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-placeholder {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-placeholder i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.video-placeholder:hover i {
+  color: #fff;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-placeholder img {
+  transition: transform 0.5s ease;
+  filter: brightness(0.8);
+}
+
+.video-placeholder:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.video-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.video-card ul li {
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+
+/* Modal Video Styling */
+.modal-content {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-header {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.ratio-16x9 {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Update for PERN stack badges */
+.tech-badge-fullstack {
+  background-color: #198754 !important;
+}
+
+.project-scope h5 {
+  font-size: 1.25rem;
+}
+/* Simple Portfolio Styles */
+.project-card {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.project-card h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-image img {
+  border: 1px solid #ddd;
+}
+
+.project-tech .badge {
+  margin: 2px;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+.video-demo-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.video-demo-card .card-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Make sure titles stand out */
+#portfolio h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+#portfolio .project-card h4 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+/* Simple Portfolio Styles */
+.project-card {
+  padding: 25px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-image img {
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.project-tech .badge {
+  margin: 2px;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.project-links {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.project-links .btn {
+  min-width: 90px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.video-demo-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.video-demo-card .card-header {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Make sure titles stand out */
+#portfolio h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+#portfolio .project-card h4 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+#code-rental:hover {
+  /* This targets the <a> element */
+  background-color: #ff0000; 
+  /* Important: Since this is an outline button, you need to set the color too */
+  color: white; 
+  /* Optional: Remove border, as the outline button has one */
+  border-color: #ff0000; 
+}
