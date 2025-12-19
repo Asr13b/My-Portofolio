@@ -443,33 +443,3 @@ h6 {
   /* Optional: Remove border, as the outline button has one */
   border-color: #ff0000; 
 }
-/* Future Summary Styles */
-.summary-toggle {
-  transition: all 0.3s ease;
-  background-color: #f8f9fa !important;
-  border-color: #dee2e6 !important;
-}
-
-.summary-toggle:hover {
-  background-color: #e9ecef !important;
-}
-
-.summary-toggle .arrow {
-  display: inline-block;
-  transition: transform 0.3s ease;
-  margin-right: 8px;
-}
-
-.summary-toggle[aria-expanded="true"] .arrow {
-  transform: rotate(90deg);
-}
-
-.future-summary .card {
-  border: 1px solid #dee2e6;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.future-summary p {
-  margin-bottom: 6px;
-  line-height: 1.4;
-}
