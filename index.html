@@ -139,7 +139,7 @@
     </section>
   
     <!-- Portfolio-->
-  <!-- Portfolio-->
+ <!-- Portfolio-->
 <section class="content-section" id="portfolio">
   <div class="container px-4 px-lg-5">
     <div class="content-section-heading text-center">
@@ -147,43 +147,37 @@
       <h2 class="mb-5"><strong>MY PROJECTS</strong></h2>
     </div>
 
-    <!-- Simple Project Grid -->
-    <div class="col-md-4 mb-4">
-  <div class="project-card text-center">
-    <div class="project-image mb-3">
-      <img src="/assets/img/rental app.png.PNG" 
-           alt="Rental App" class="img-fluid rounded">
-    </div>
-    <h4 class="mb-2"><strong>RENTAL APP</strong></h4>
-    <p class="text-muted mb-3">Full-stack property management</p>
-    <div class="project-tech mb-3">
-      <span class="badge bg-success">PostgreSQL</span>
-      <span class="badge bg-success">Express</span>
-      <span class="badge bg-success">React</span>
-      <span class="badge bg-success">Node.js</span>
-    </div>
-    
-    <!-- Future Summary Section (NEW) -->
-    <div class="future-summary mb-3" style="border-top: 1px solid #eee; padding-top: 10px;">
-      <button class="btn btn-sm btn-outline-info w-100 text-start summary-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#rentalSummary" aria-expanded="false" aria-controls="rentalSummary">
-        <span class="arrow">▶</span> Key Features Summary
-      </button>
-      <div class="collapse mt-2" id="rentalSummary">
-        <div class="card card-body p-2 small text-start" style="font-size: 0.85rem;">
-          <p class="mb-1"><strong>1. Multi-role System:</strong> Users (owners) & Admins (managers)</p>
-          <p class="mb-1"><strong>2. Property Lifecycle:</strong> Submission → Pending → Approved → Listing</p>
-          <p class="mb-1"><strong>3. Image Management:</strong> Cloudinary integration for images</p>
-          <p class="mb-1"><strong>4. Search & Filter:</strong> Location, price, property type filters</p>
-          <p class="mb-1"><strong>5. Contact System:</strong> Secure inquiry between renters & owners</p>
-          <p class="mb-1"><strong>6. Admin Dashboard:</strong> Comprehensive management interface</p>
-          <p class="mb-1"><strong>7. Responsive Design:</strong> Mobile-friendly interface</p>
-          <p class="mb-0"><strong>8. Real-time Updates:</strong> Instant status changes & notifications</p>
+    <!-- Simple Project Grid - Now with 4 cards -->
+    <div class="row mb-5">
+      <!-- Rental App -->
+      <div class="col-md-3 mb-4">
+        <div class="project-card text-center h-100">
+          <div class="project-image mb-3">
+            <img src="/assets/img/rental app.png.PNG" 
+                 alt="Rental App" class="img-fluid rounded">
+          </div>
+          <h4 class="mb-2"><strong>RENTAL APP</strong></h4>
+          <p class="text-muted mb-3">Full-stack property management</p>
+          <div class="project-tech mb-3">
+            <span class="badge bg-success">PostgreSQL</span>
+            <span class="badge bg-success">Express</span>
+            <span class="badge bg-success">React</span>
+            <span class="badge bg-success">Node.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://frontend-5fan.onrender.com" class="btn btn-sm btn-success me-2" id="demo-rental" target="_blank">
+              <i class="fas fa-external-link-alt me-1"></i>Demo
+            </a>
+            <a href="#" class="btn btn-sm btn-outline-success" id="code-rental" target="_blank">
+              <i class="fab fa-github me-1 ttv"></i> Code available
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+      
       <!-- Netflix Clone -->
-      <div class="col-md-4 mb-4">
-        <div class="project-card text-center">
+      <div class="col-md-3 mb-4">
+        <div class="project-card text-center h-100">
           <div class="project-image mb-3">
             <img src="assets//img/netflix.png.PNG" 
                  alt="Netflix Clone" class="img-fluid rounded">
@@ -207,8 +201,8 @@
       </div>
       
       <!-- Apple Clone -->
-      <div class="col-md-4 mb-4">
-        <div class="project-card text-center">
+      <div class="col-md-3 mb-4">
+        <div class="project-card text-center h-100">
           <div class="project-image mb-3">
             <img src="/assets/img/apple app.png.PNG" 
                  alt="Apple Clone" class="img-fluid rounded">
@@ -220,7 +214,6 @@
             <span class="badge bg-secondary">CSS3</span>
             <span class="badge bg-secondary">JavaScript</span>
           </div>
-        
           <div class="project-links">
             <a href="https://fanciful-macaron-e38be5.netlify.app/" class="btn btn-sm btn-primary me-2" id="demo-apple" target="_blank">
               <i class="fas fa-external-link-alt me-1"></i>Demo
@@ -232,35 +225,95 @@
         </div>
       </div>
       
-    </div>
-
-    <!-- Single Video Card -->
-   <div class="row">
-  <div class="col-lg-8 mx-auto">
-    <div class="card video-demo-card">
-      <div class="card-header bg-dark text-white text-center py-3">
-        <h4 class="mb-0"><strong>WATCH PROJECT DEMO</strong></h4>
-      </div>
-      <div class="card-body">
-        <div class="ratio ratio-16x9 mb-3">
-          <iframe 
-            src="https://www.youtube.com/embed/ynjOSRLP3XQ?rel=0" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
+      <!-- Rental App Summary Card (4th Card) -->
+      <div class="col-md-3 mb-4">
+        <div class="project-card text-center h-100 d-flex flex-column">
+          <div class="summary-header mb-3">
+            <h4 class="mb-2"><strong>FEATURE SUMMARY</strong></h4>
+            <p class="text-muted mb-3">Rental App Details</p>
+            <div class="project-tech mb-3">
+              <span class="badge bg-info">Key Features</span>
+              <span class="badge bg-info">System Overview</span>
+            </div>
+          </div>
+          
+          <div class="feature-summary flex-grow-1" style="overflow-y: auto;">
+            <div class="text-start">
+              <p class="mb-2">
+                <span class="arrow-indicator">→</span>
+                <strong>Multi-role System:</strong> Users & Admins
+              </p>
+              <p class="mb-2">
+                <span class="arrow-indicator">→</span>
+                <strong>Property Lifecycle:</strong> Submission → Approved → Listing
+              </p>
+              <p class="mb-2">
+                <span class="arrow-indicator">→</span>
+                <strong>Image Management:</strong> Cloudinary integration
+              </p>
+              <p class="mb-2">
+                <span class="arrow-indicator">→</span>
+                <strong>Search & Filter:</strong> Location, price, type
+              </p>
+              <p class="mb-2">
+                <span class="arrow-indicator">→</span>
+                <strong>Contact System:</strong> Secure renter-owner inquiry
+              </p>
+              <p class="mb-2">
+                <span class="arrow-indicator">→</span>
+                <strong>Admin Dashboard:</strong> Full management interface
+              </p>
+              <p class="mb-2">
+                <span class="arrow-indicator">→</span>
+                <strong>Responsive Design:</strong> Mobile-friendly
+              </p>
+              <p class="mb-0">
+                <span class="arrow-indicator">→</span>
+                <strong>Real-time Updates:</strong> Instant notifications
+              </p>
+            </div>
+          </div>
+          
+          <div class="mt-3 pt-3 border-top">
+            <div class="project-links">
+              <a href="https://frontend-5fan.onrender.com" class="btn btn-sm btn-info w-100" target="_blank">
+                <i class="fas fa-external-link-alt me-1"></i>View Demo
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="text-center">
-          <p class="mb-2">
-            <i class="far fa-clock me-1"></i> 
-            <strong>Watch the 6-minute Project Demo </strong> 
-          </p>
+      </div>
+    </div>
+    
+    <!-- Single Video Card -->
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card video-demo-card">
+          <div class="card-header bg-dark text-white text-center py-3">
+            <h4 class="mb-0"><strong>WATCH PROJECT DEMO</strong></h4>
+          </div>
+          <div class="card-body">
+            <div class="ratio ratio-16x9 mb-3">
+              <iframe 
+                src="https://www.youtube.com/embed/ynjOSRLP3XQ?rel=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="text-center">
+              <p class="mb-2">
+                <i class="far fa-clock me-1"></i> 
+                <strong>Watch the 6-minute Project Demo</strong> 
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
     
     <!-- Call to Action-->
     <section class="content-section bg-primary text-white" id="contact">
