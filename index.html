@@ -380,43 +380,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-          // Toggle Rental App Summary Panel
-document.addEventListener('DOMContentLoaded', function() {
-  const rentalCard = document.getElementById('rentalCard');
-  const summaryPanel = document.getElementById('summaryPanel');
-  const showSummaryBtn = document.querySelector('.show-summary-btn');
-  
-  if (rentalCard && summaryPanel && showSummaryBtn) {
-    // Toggle on button click
-    showSummaryBtn.addEventListener('click', function(e) {
-      e.stopPropagation();
-      summaryPanel.classList.toggle('active');
-      showSummaryBtn.classList.toggle('active');
-      showSummaryBtn.innerHTML = summaryPanel.classList.contains('active') 
-        ? '<i class="fas fa-chevron-down me-1"></i> Hide Features' 
-        : '<i class="fas fa-chevron-right me-1"></i> Show Features';
-    });
-    
-    // Toggle on card click (optional)
-    rentalCard.addEventListener('click', function(e) {
-      if (!showSummaryBtn.contains(e.target)) {
-        summaryPanel.classList.toggle('active');
-        showSummaryBtn.classList.toggle('active');
-        showSummaryBtn.innerHTML = summaryPanel.classList.contains('active') 
-          ? '<i class="fas fa-chevron-down me-1"></i> Hide Features' 
-          : '<i class="fas fa-chevron-right me-1"></i> Show Features';
-      }
-    });
-    
-    // Close panel when clicking outside (optional)
-    document.addEventListener('click', function(e) {
-      if (!rentalCard.contains(e.target) && !summaryPanel.contains(e.target)) {
-        summaryPanel.classList.remove('active');
-        showSummaryBtn.classList.remove('active');
-        showSummaryBtn.innerHTML = '<i class="fas fa-chevron-right me-1"></i> Show Features';
-      }
-    });
-  }
-});
   </body>
 </html>
